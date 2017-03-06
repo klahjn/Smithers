@@ -60,6 +60,7 @@ Partial Class Form1
         Me.CheckBox1.TabIndex = 3
         Me.CheckBox1.Text = "Burn"
         Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CheckBox1.Visible = False
         '
         'Button2
         '

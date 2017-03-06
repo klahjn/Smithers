@@ -10,13 +10,18 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         For i = 0 To CheckedListBox1.Items.Count - 1
             CheckedListBox1.SelectedIndex = i
-            If CheckedListBox1.GetItemChecked(i) = True Then MsgBox(CheckedListBox1.SelectedItem.ToString)
+            If CheckedListBox1.GetItemChecked(i) = True Then
+                Dim startInfo As New ProcessStartInfo
+                startInfo.FileName = Application.StartupPath + "\tools\mk.exe"
+                startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + Chr(34)
+                Dim process As Process = Process.Start(startInfo)
+                process.WaitForExit()
+            End If
         Next
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim grab As String = FolderBrowserDialog1.ShowDialog
         If IO.Directory.Exists(FolderBrowserDialog1.SelectedPath.ToString) = True Then My.Settings.Output = FolderBrowserDialog1.SelectedPath.ToString : My.Settings.Save()
-        MsgBox(FolderBrowserDialog1.SelectedPath.ToString)
     End Sub
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.CheckState = CheckState.Checked Then CheckBox1.Checked = True : My.Settings.Burn = "Yes" : Exit Sub

@@ -10,3 +10,7 @@ C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\D
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.xml
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.pdb
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\tools\mk.exe
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\Mr.Smithers.exe.manifest
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\Mr.Smithers.application
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.exe.manifest
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.application

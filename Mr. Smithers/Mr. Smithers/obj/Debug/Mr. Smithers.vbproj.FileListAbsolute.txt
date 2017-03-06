@@ -1,0 +1,12 @@
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\Mr.Smithers.exe.config
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr. Smithers.vbprojResolveAssemblyReference.cache
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.Form1.resources
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.Resources.resources
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr. Smithers.vbproj.GenerateResource.Cache
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\Mr.Smithers.exe
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\Mr.Smithers.pdb
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\Mr.Smithers.xml
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.exe
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.xml
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Debug\Mr.Smithers.pdb
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Debug\tools\mk.exe

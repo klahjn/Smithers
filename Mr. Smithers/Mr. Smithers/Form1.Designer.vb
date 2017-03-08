@@ -27,20 +27,28 @@ Partial Class Form1
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckedListBox2 = New System.Windows.Forms.CheckedListBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(275, 65)
+        Me.Button1.Location = New System.Drawing.Point(160, 136)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 27)
+        Me.Button1.Size = New System.Drawing.Size(64, 27)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Process"
+        Me.Button1.Text = "Convert"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'CheckedListBox1
@@ -48,32 +56,21 @@ Partial Class Form1
         Me.CheckedListBox1.FormattingEnabled = True
         Me.CheckedListBox1.Location = New System.Drawing.Point(3, 8)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(266, 139)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(353, 124)
         Me.CheckedListBox1.TabIndex = 2
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(277, 98)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(48, 17)
-        Me.CheckBox1.TabIndex = 3
-        Me.CheckBox1.Text = "Burn"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        Me.CheckBox1.Visible = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(275, 8)
+        Me.Button2.Location = New System.Drawing.Point(3, 138)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(80, 24)
+        Me.Button2.Size = New System.Drawing.Size(67, 24)
         Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Open"
+        Me.Button2.Text = "Source"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(277, 36)
+        Me.Button3.Location = New System.Drawing.Point(76, 138)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(78, 25)
         Me.Button3.TabIndex = 5
@@ -89,31 +86,109 @@ Partial Class Form1
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(277, 130)
+        Me.CheckBox2.Location = New System.Drawing.Point(319, 133)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(37, 17)
         Me.CheckBox2.TabIndex = 6
         Me.CheckBox2.Text = "All"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
+        'CheckedListBox2
+        '
+        Me.CheckedListBox2.FormattingEnabled = True
+        Me.CheckedListBox2.Location = New System.Drawing.Point(3, 168)
+        Me.CheckedListBox2.Name = "CheckedListBox2"
+        Me.CheckedListBox2.Size = New System.Drawing.Size(351, 109)
+        Me.CheckedListBox2.TabIndex = 7
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(319, 278)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(37, 17)
+        Me.CheckBox1.TabIndex = 8
+        Me.CheckBox1.Text = "All"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(230, 135)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(61, 27)
+        Me.Button4.TabIndex = 9
+        Me.Button4.Text = "Burn"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(52, 284)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(65, 21)
+        Me.ComboBox1.TabIndex = 10
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(5, 287)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 13)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Write to:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(123, 287)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "Copies"
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(166, 284)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(37, 20)
+        Me.NumericUpDown1.TabIndex = 13
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(209, 286)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(78, 17)
+        Me.CheckBox3.TabIndex = 14
+        Me.CheckBox3.Text = "Delete ISO"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(368, 153)
+        Me.ClientSize = New System.Drawing.Size(368, 310)
+        Me.Controls.Add(Me.CheckBox3)
+        Me.Controls.Add(Me.NumericUpDown1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.CheckedListBox2)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.Button1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Smithers"
+        Me.Text = "Mr. Smithers"
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -122,9 +197,16 @@ Partial Class Form1
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
     Friend WithEvents Button1 As Button
     Friend WithEvents CheckedListBox1 As CheckedListBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckedListBox2 As CheckedListBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents CheckBox3 As CheckBox
 End Class

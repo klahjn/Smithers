@@ -101,6 +101,42 @@ Namespace My
                 Me("ImgburnLoc") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("1")>  _
+        Public Property Copies() As String
+            Get
+                Return CType(Me("Copies"),String)
+            End Get
+            Set
+                Me("Copies") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Drive() As String
+            Get
+                Return CType(Me("Drive"),String)
+            End Get
+            Set
+                Me("Drive") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("No")>  _
+        Public Property Deleter() As String
+            Get
+                Return CType(Me("Deleter"),String)
+            End Get
+            Set
+                Me("Deleter") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

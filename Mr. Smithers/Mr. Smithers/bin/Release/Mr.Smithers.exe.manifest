@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mr.Smithers.exe" size="48640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mr.Smithers.exe" size="47616">
       <assemblyIdentity name="Mr.Smithers" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ytgovLXFEtCSeTE7MF83I2FyW+7t4JvdNlLP7sWALb4=</dsig:DigestValue>
+        <dsig:DigestValue>CGrSDtmXWEC84WFmAsmsLba/6Sm6IGYJG1Y326jEFqI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

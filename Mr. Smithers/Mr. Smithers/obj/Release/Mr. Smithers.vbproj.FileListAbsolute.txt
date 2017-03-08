@@ -1,0 +1,15 @@
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\Mr.Smithers.exe.config
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\tools\mk.exe
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\Mr.Smithers.exe.manifest
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\Mr.Smithers.application
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\Mr.Smithers.exe
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\Mr.Smithers.pdb
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\Mr.Smithers.xml
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.Form1.resources
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.Resources.resources
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr. Smithers.vbproj.GenerateResource.Cache
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.exe.manifest
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.application
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.exe
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.xml
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.pdb

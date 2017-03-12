@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Mr.Smithers.exe.manifest" size="4842">
+    <dependentAssembly dependencyType="install" codebase="Application Files\Mr.Smithers_1_0_0_3\Mr.Smithers.exe.manifest" size="4842">
       <assemblyIdentity name="Mr.Smithers.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>W/K70sORhiLuB+9UXr9Oraa+o6NMVD0kmlbUzeAC7/0=</dsig:DigestValue>
+        <dsig:DigestValue>C2xfamD86el5EHF/CNm1Eh67N2Fh51uNKIs8L2XZ0Jc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

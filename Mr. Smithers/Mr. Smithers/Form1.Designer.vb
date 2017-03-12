@@ -40,14 +40,15 @@ Partial Class Form1
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(160, 136)
+        Me.Button1.Location = New System.Drawing.Point(133, 136)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(64, 27)
+        Me.Button1.Size = New System.Drawing.Size(60, 27)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Convert"
         Me.Button1.UseVisualStyleBackColor = True
@@ -62,18 +63,18 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(3, 138)
+        Me.Button2.Location = New System.Drawing.Point(5, 138)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(67, 24)
+        Me.Button2.Size = New System.Drawing.Size(49, 24)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Source"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(76, 138)
+        Me.Button3.Location = New System.Drawing.Point(56, 137)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(78, 25)
+        Me.Button3.Size = New System.Drawing.Size(75, 25)
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "Destination"
         Me.Button3.UseVisualStyleBackColor = True
@@ -114,9 +115,9 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(230, 135)
+        Me.Button4.Location = New System.Drawing.Point(196, 136)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(61, 27)
+        Me.Button4.Size = New System.Drawing.Size(47, 27)
         Me.Button4.TabIndex = 9
         Me.Button4.Text = "Burn"
         Me.Button4.UseVisualStyleBackColor = True
@@ -174,12 +175,23 @@ Partial Class Form1
         Me.CheckBox4.Text = "Cobra GenPS3 ISO 2.0"
         Me.CheckBox4.UseVisualStyleBackColor = True
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(269, 144)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(31, 13)
+        Me.LinkLabel1.TabIndex = 16
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "More"
+        '
         'Form1
         '
         Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 310)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.CheckBox4)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.NumericUpDown1)
@@ -222,4 +234,5 @@ Partial Class Form1
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

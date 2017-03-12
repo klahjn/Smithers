@@ -14,3 +14,5 @@ C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\R
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.xml
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.pdb
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr. Smithers.vbprojResolveAssemblyReference.cache
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\bin\Release\tools\gen20.exe
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.Form2.resources

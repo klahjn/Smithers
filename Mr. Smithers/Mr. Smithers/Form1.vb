@@ -121,4 +121,9 @@ gEntly:
         Dim gimp() = Split(sDir, "\")
         Return gimp(gimp.Length - 1)
     End Function
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim form As New Form2
+        form.Show()
+    End Sub
 End Class

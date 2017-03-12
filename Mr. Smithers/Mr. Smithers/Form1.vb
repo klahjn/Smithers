@@ -17,8 +17,11 @@ Public Class Form1
             CheckedListBox1.SelectedIndex = i
             If CheckedListBox1.GetItemChecked(i) = True Then
                 Dim startInfo As New ProcessStartInfo
-                startInfo.FileName = Application.StartupPath + "\tools\mk.exe"
-                startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + Chr(34)
+                If CheckBox4.Checked = False Then startInfo.FileName = Application.StartupPath + "\tools\mk.exe"
+                If CheckBox4.Checked = True Then startInfo.FileName = Application.StartupPath + "\tools\gen20.exe"
+                If CheckBox4.Checked = False Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + Chr(34)
+                If CheckBox4.Checked = True Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
+                MsgBox(startInfo.FileName + startInfo.Arguments)
                 Dim process As Process = Process.Start(startInfo)
                 process.WaitForExit()
             End If
@@ -114,4 +117,9 @@ Public Class Form1
 gEntly:
         Next
     End Sub
+    Function GetFolderName(ByVal sDir As String) As String
+        Dim gimp() = Split(sDir, "\")
+        MsgBox(gimp(gimp.Length - 1))
+        Return gimp(gimp.Length - 1)
+    End Function
 End Class

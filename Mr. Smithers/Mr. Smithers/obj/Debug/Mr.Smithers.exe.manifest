@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mr.Smithers.exe" size="50176">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mr.Smithers.exe" size="51200">
       <assemblyIdentity name="Mr.Smithers" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>e/9g+OnwFgXIYz5Boet0/QHHm3d77OSPL+Gi/p/pCHA=</dsig:DigestValue>
+        <dsig:DigestValue>cp29S8jDKCL4jWtDdUxRrl+52mDUzJGFiBbNOc5cR60=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -70,6 +70,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>c9pjVeDshLLgPEsRjSQI7cTfGaaIgHM2IXTzBO7Ls54=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="tools\gen20.exe" size="110592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r96tWy5FOi0bHSp74AB5lEXFSVfVopeWNBJtNvSNvyE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="tools\mk.exe" size="32256">

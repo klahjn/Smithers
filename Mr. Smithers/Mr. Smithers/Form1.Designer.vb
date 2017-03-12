@@ -39,6 +39,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -86,7 +87,7 @@ Partial Class Form1
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(319, 133)
+        Me.CheckBox2.Location = New System.Drawing.Point(324, 133)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(37, 17)
         Me.CheckBox2.TabIndex = 6
@@ -104,7 +105,7 @@ Partial Class Form1
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(319, 278)
+        Me.CheckBox1.Location = New System.Drawing.Point(323, 278)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(37, 17)
         Me.CheckBox1.TabIndex = 8
@@ -156,12 +157,22 @@ Partial Class Form1
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(209, 286)
+        Me.CheckBox3.Location = New System.Drawing.Point(209, 278)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(78, 17)
         Me.CheckBox3.TabIndex = 14
         Me.CheckBox3.Text = "Delete ISO"
         Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(209, 293)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(79, 17)
+        Me.CheckBox4.TabIndex = 15
+        Me.CheckBox4.Text = "Use geniso"
+        Me.CheckBox4.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -169,6 +180,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 310)
+        Me.Controls.Add(Me.CheckBox4)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.Label2)
@@ -209,4 +221,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
 End Class

@@ -165,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Jeanette-Foshee-Simpsons-01-Nuclear-Plant-Waylon-Smithers.ico" />
+    <Content Include="tools\gen20.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="tools\mk.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

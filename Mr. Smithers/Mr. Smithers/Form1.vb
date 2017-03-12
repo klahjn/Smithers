@@ -21,7 +21,6 @@ Public Class Form1
                 If CheckBox4.Checked = True Then startInfo.FileName = Application.StartupPath + "\tools\gen20.exe"
                 If CheckBox4.Checked = False Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
                 If CheckBox4.Checked = True Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
-                MsgBox(startInfo.FileName + startInfo.Arguments)
                 Dim process As Process = Process.Start(startInfo)
                 process.WaitForExit()
             End If
@@ -51,6 +50,7 @@ Public Class Form1
         For Each folder As String In System.IO.Directory.GetDirectories(My.Settings.Source.ToString)
             If IO.Directory.Exists(folder + "\PS3_GAME\") = True Then CheckedListBox1.Items.Add(folder)
         Next
+        Form2.Show()
     End Sub
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
         If CheckBox2.CheckState = CheckState.Checked Then
@@ -119,7 +119,6 @@ gEntly:
     End Sub
     Function GetFolderName(ByVal sDir As String) As String
         Dim gimp() = Split(sDir, "\")
-        MsgBox(gimp(gimp.Length - 1))
         Return gimp(gimp.Length - 1)
     End Function
 End Class

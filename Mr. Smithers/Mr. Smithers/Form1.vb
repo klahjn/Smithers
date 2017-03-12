@@ -19,7 +19,7 @@ Public Class Form1
                 Dim startInfo As New ProcessStartInfo
                 If CheckBox4.Checked = False Then startInfo.FileName = Application.StartupPath + "\tools\mk.exe"
                 If CheckBox4.Checked = True Then startInfo.FileName = Application.StartupPath + "\tools\gen20.exe"
-                If CheckBox4.Checked = False Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + Chr(34)
+                If CheckBox4.Checked = False Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
                 If CheckBox4.Checked = True Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
                 MsgBox(startInfo.FileName + startInfo.Arguments)
                 Dim process As Process = Process.Start(startInfo)

@@ -169,9 +169,9 @@ Partial Class Form1
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.Location = New System.Drawing.Point(209, 293)
         Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(79, 17)
+        Me.CheckBox4.Size = New System.Drawing.Size(136, 17)
         Me.CheckBox4.TabIndex = 15
-        Me.CheckBox4.Text = "Use geniso"
+        Me.CheckBox4.Text = "Cobra GenPS3 ISO 2.0"
         Me.CheckBox4.UseVisualStyleBackColor = True
         '
         'Form1

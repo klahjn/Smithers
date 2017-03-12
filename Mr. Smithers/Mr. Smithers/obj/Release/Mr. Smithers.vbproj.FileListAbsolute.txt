@@ -13,3 +13,4 @@ C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\R
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.exe
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.xml
 C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr.Smithers.pdb
+C:\Users\asull\OneDrive\Documents\GitHub\Seymour\Mr. Smithers\Mr. Smithers\obj\Release\Mr. Smithers.vbprojResolveAssemblyReference.cache

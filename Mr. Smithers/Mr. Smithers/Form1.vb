@@ -1,4 +1,6 @@
 ﻿Imports System.IO
+Imports System.Security
+Imports System.Security.Cryptography
 Public Class Form1
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim grab As String = FolderBrowserDialog1.ShowDialog()
@@ -98,5 +100,18 @@ Public Class Form1
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         If CheckBox3.CheckState = 0 Then My.Settings.Deleter = "NO" : My.Settings.Save() : Exit Sub
         If CheckBox3.CheckState = 1 Then My.Settings.Deleter = "YES" : My.Settings.Save() : Exit Sub
+    End Sub
+    Private Sub Form1_DragEnter(sender As Object, e As DragEventArgs) Handles Me.DragEnter
+        If (e.Data.GetDataPresent(DataFormats.FileDrop)) Then
+            e.Effect = DragDropEffects.Copy
+        End If
+    End Sub
+    Private Sub Form1_DragDrop(sender As Object, e As DragEventArgs) Handles Me.DragDrop
+        Dim files() As String = e.Data.GetData(DataFormats.FileDrop)
+        For Each path In files
+            If InStr(path, ".iso") Then CheckedListBox2.Items.Add(path.ToString) : GoTo gEntly
+            If Not InStr(path, ".iso") Then CheckedListBox1.Items.Add(path.ToString) : GoTo gEntly
+gEntly:
+        Next
     End Sub
 End Class

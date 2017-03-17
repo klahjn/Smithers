@@ -2,37 +2,6 @@
 Imports System.Security
 Imports System.Security.Cryptography
 Public Class Form1
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim grab As String = FolderBrowserDialog1.ShowDialog()
-        If FolderBrowserDialog1.SelectedPath <> "" Then
-            For Each folder As String In System.IO.Directory.GetDirectories(FolderBrowserDialog1.SelectedPath)
-                If IO.Directory.Exists(folder + "\PS3_GAME\") = True Then CheckedListBox1.Items.Add(folder)
-            Next
-            My.Settings.Source = FolderBrowserDialog1.SelectedPath.ToString
-            My.Settings.Save()
-        End If
-    End Sub
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        For i = 0 To CheckedListBox1.Items.Count - 1
-            CheckedListBox1.SelectedIndex = i
-            If CheckedListBox1.GetItemChecked(i) = True Then
-                Dim startInfo As New ProcessStartInfo
-                If CheckBox4.Checked = False Then startInfo.FileName = Application.StartupPath + "\tools\mk.exe"
-                If CheckBox4.Checked = True Then startInfo.FileName = Application.StartupPath + "\tools\gen20.exe"
-                If CheckBox4.Checked = False Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
-                If CheckBox4.Checked = True Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
-                Dim process As Process = Process.Start(startInfo)
-                process.WaitForExit()
-            End If
-        Next
-    End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim grab As String = FolderBrowserDialog1.ShowDialog
-        If IO.Directory.Exists(FolderBrowserDialog1.SelectedPath.ToString) = True Then My.Settings.Output = FolderBrowserDialog1.SelectedPath.ToString : My.Settings.Save()
-        For Each file As String In System.IO.Directory.GetFiles(FolderBrowserDialog1.SelectedPath)
-            If InStr(file, ".iso") Then CheckedListBox2.Items.Add(file)
-        Next
-    End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
         If My.Settings.Deleter = "YES" Then CheckBox3.Checked = True
         If My.Settings.Drive <> "" Then ComboBox1.Text = My.Settings.Drive
@@ -82,18 +51,6 @@ Public Class Form1
             CheckBox1.Text = "All"
         End If
     End Sub
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        For i = 0 To CheckedListBox2.Items.Count - 1
-            CheckedListBox2.SelectedIndex = i
-            If CheckedListBox2.GetItemChecked(i) = True Then
-                Dim startInfo As New ProcessStartInfo
-                startInfo.FileName = My.Settings.ImgburnLoc
-                startInfo.Arguments = " /MODE WRITE /SRC " + Chr(34) + CheckedListBox2.Text.ToString + Chr(34) + " /DEST " + My.Settings.Drive.ToString + " /START /COPIES " + My.Settings.Copies.ToString + " /DELETEIMAGE " + My.Settings.Deleter.ToString
-                Dim process As Process = Process.Start(startInfo)
-                process.WaitForExit()
-            End If
-        Next
-    End Sub
     Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
         My.Settings.Copies = NumericUpDown1.Value.ToString : My.Settings.Save()
     End Sub
@@ -121,9 +78,53 @@ gEntly:
         Dim gimp() = Split(sDir, "\")
         Return gimp(gimp.Length - 1)
     End Function
-
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Dim form As New Form2
         form.Show()
+    End Sub
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+        Dim grab As String = FolderBrowserDialog1.ShowDialog()
+        If FolderBrowserDialog1.SelectedPath <> "" Then
+            CheckedListBox1.Items.Clear()
+            For Each folder As String In System.IO.Directory.GetDirectories(FolderBrowserDialog1.SelectedPath)
+                If IO.Directory.Exists(folder + "\PS3_GAME\") = True Then CheckedListBox1.Items.Add(folder)
+            Next
+            My.Settings.Source = FolderBrowserDialog1.SelectedPath.ToString
+            My.Settings.Save()
+        End If
+    End Sub
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+        Dim grab As String = FolderBrowserDialog1.ShowDialog
+        If IO.Directory.Exists(FolderBrowserDialog1.SelectedPath.ToString) = True Then My.Settings.Output = FolderBrowserDialog1.SelectedPath.ToString : My.Settings.Save()
+        CheckedListBox2.Items.Clear()
+        For Each file As String In System.IO.Directory.GetFiles(FolderBrowserDialog1.SelectedPath)
+            If InStr(file, ".iso") Then CheckedListBox2.Items.Add(file)
+        Next
+    End Sub
+    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        For i = 0 To CheckedListBox1.Items.Count - 1
+            CheckedListBox1.SelectedIndex = i
+            If CheckedListBox1.GetItemChecked(i) = True Then
+                Dim startInfo As New ProcessStartInfo
+                If CheckBox4.Checked = False Then startInfo.FileName = Application.StartupPath + "\tools\mk.exe"
+                If CheckBox4.Checked = True Then startInfo.FileName = Application.StartupPath + "\tools\gen20.exe"
+                If CheckBox4.Checked = False Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
+                If CheckBox4.Checked = True Then startInfo.Arguments = " " + Chr(34) + CheckedListBox1.Text.ToString + Chr(34) + " " + Chr(34) + My.Settings.Output.ToString + "\" + GetFolderName(CheckedListBox1.Text.ToString) + ".iso" + Chr(34)
+                Dim process As Process = Process.Start(startInfo)
+                process.WaitForExit()
+            End If
+        Next
+    End Sub
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        For i = 0 To CheckedListBox2.Items.Count - 1
+            CheckedListBox2.SelectedIndex = i
+            If CheckedListBox2.GetItemChecked(i) = True Then
+                Dim startInfo As New ProcessStartInfo
+                startInfo.FileName = My.Settings.ImgburnLoc
+                startInfo.Arguments = " /MODE WRITE /SRC " + Chr(34) + CheckedListBox2.Text.ToString + Chr(34) + " /DEST " + My.Settings.Drive.ToString + " /START /COPIES " + My.Settings.Copies.ToString + " /DELETEIMAGE " + My.Settings.Deleter.ToString
+                Dim process As Process = Process.Start(startInfo)
+                process.WaitForExit()
+            End If
+        Next
     End Sub
 End Class

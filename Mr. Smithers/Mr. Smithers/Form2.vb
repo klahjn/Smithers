@@ -15,4 +15,12 @@
         If Trim(Label4.Text) = Trim(TextBox1.Text) Then Label5.Text = "Both hashes match!!!"
         If Trim(Label4.Text) <> Trim(TextBox1.Text) Then Label5.Text = "They don't match, sir...."
     End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ListBox1.Items.AddRange(IO.Directory.GetFiles(Application.StartupPath + "\tools\", "*.exe"))
+        For i = 0 To ListBox1.Items.Count - 1
+            ListBox1.SelectedIndex = i
+            ListBox1.Items(ListBox1.SelectedIndex) = Replace(ListBox1.SelectedItem.ToString, Application.StartupPath.ToString + "\tools\", "")
+        Next
+    End Sub
 End Class

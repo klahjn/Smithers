@@ -137,6 +137,30 @@ Namespace My
                 Me("Deleter") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Generator() As String
+            Get
+                Return CType(Me("Generator"),String)
+            End Get
+            Set
+                Me("Generator") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Arguments() As String
+            Get
+                Return CType(Me("Arguments"),String)
+            End Get
+            Set
+                Me("Arguments") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -35,6 +35,8 @@ Partial Class Form2
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -132,12 +134,30 @@ Partial Class Form2
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(304, 122)
+        Me.Button2.Location = New System.Drawing.Point(324, 122)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 23)
+        Me.Button2.Size = New System.Drawing.Size(66, 23)
         Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Save Config"
+        Me.Button2.Text = "Run "
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(143, 123)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(85, 13)
+        Me.Label8.TabIndex = 12
+        Me.Label8.Text = "/file = source file"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(139, 136)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(95, 13)
+        Me.Label9.TabIndex = 13
+        Me.Label9.Text = "/dest = destination"
         '
         'Form2
         '
@@ -145,6 +165,8 @@ Partial Class Form2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(395, 195)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -179,4 +201,6 @@ Partial Class Form2
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
 End Class

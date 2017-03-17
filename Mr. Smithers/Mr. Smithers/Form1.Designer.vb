@@ -223,7 +223,6 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
-    Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckedListBox2 As CheckedListBox
@@ -239,4 +238,5 @@ Partial Class Form1
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents LinkLabel4 As LinkLabel
     Friend WithEvents LinkLabel5 As LinkLabel
+    Public WithEvents CheckedListBox1 As CheckedListBox
 End Class

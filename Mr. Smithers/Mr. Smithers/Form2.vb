@@ -16,7 +16,6 @@ Public Class Form2
         If Trim(Label4.Text) = Trim(TextBox1.Text) Then Label5.Text = "Both hashes match!!!"
         If Trim(Label4.Text) <> Trim(TextBox1.Text) Then Label5.Text = "They don't match, sir...."
     End Sub
-
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ListBox1.Items.AddRange(IO.Directory.GetFiles(Application.StartupPath + "\tools\", "*.exe"))
         For i = 0 To ListBox1.Items.Count - 1
@@ -27,7 +26,6 @@ Public Class Form2
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim crash As String = Replace(TextBox2.Text, "/file", Form1.CheckedListBox1.Text)
         crash = Replace(crash, "/dest", My.Settings.Output + GetFolderName(Form1.CheckedListBox1.Text.ToString) + ".iso")
-        'MsgBox(ListBox1.SelectedItem.ToString + " " + crash + vbCrLf + "Would you like to run this?", vbYesNo, "Advanced Runtool")
         Select Case MsgBox(Application.StartupPath + "\tools\" + ListBox1.SelectedItem.ToString + " " + crash + vbCrLf + "Would you like to run this?", MsgBoxStyle.Critical + MsgBoxStyle.YesNo, "Advanced development run tool")
             Case MsgBoxResult.Yes
                 Dim startInfo As New ProcessStartInfo
